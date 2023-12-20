@@ -86,7 +86,7 @@ The test suite for multi-task single-objective optimization (MTSOO) contains nin
 The test suite for multi-task multi-objective optimization (MTMOO) includes nine MTO complex problems, and ten 50-task MTO benchmark problems. Each of the complex MTO problem consists of two multi-objective continuous optimization tasks, while each of the 50-task MTO problem contains 50 multi-objective continuous optimization tasks, which bear certain commonality and complementarity in terms of the Pareto optimal solutions and the fitness landscape. The MTO problems feature different degrees of latent synergy between their involved two component tasks.<br/><br/>
 
 All benchmark problems included in these two test suites are elaborated in technical reports [8],[9], respectively. Their associated code in Matlab is downloadable at <br/>
-http://www.cil.ntu.edu.sg/mfo/download.html.<br/><br/>
+<a href="http://www.cil.ntu.edu.sg/mfo/download.html" target="_self" name="Yaqing Hou's Homepage" title="Yaqing Hou's Homepage">http://www.cil.ntu.edu.sg/mfo/download.html</a>.<br/><br/>
 
 <b>COMPETITION PROTOCOL</b>
 <br/>
@@ -95,9 +95,9 @@ For MTSOO test suite:
 <br/>
 <br/>
 <u>(1) Experimental settings</u><br/>
-For each of 19 benchmark problems in this test suite, an algorithm is required to be executed for 30 runs where each run should employ different random seeds for the pseudo-random number generator(s) used in the algorithm. Note: It is prohibited to execute multiple 30 runs and deliberately pick up the best one.<br/><br/>
+For each of 19 benchmark problems in this test suite, an algorithm is required to be executed for 30 runs where each run should employ different random seeds for the pseudo-random number generator(s) used in the algorithm. <b>Note:</b> It is prohibited to execute multiple 30 runs and deliberately pick up the best one.<br/><br/>
 For all 2-task benchmark problems, the maximal number of function evaluations (maxFEs) used to terminate an algorithm in a run is set to 200,000, while the maxFEs is set to 5,000,000 for all 50-task benchmark problems. In the multitasking scenario, one function evaluation means calculation of the objective function value of any component task without distinguishing different tasks.<br/><br/>
-Note: The parameter setting of an algorithm is required to be identical for each benchmark problem in this test suite, respectively. Participants are required to report the used parameter setting for each problem in the final submission to the competition. Please refer to “SUBMISSION GUIDELINE” for more details.<br/><br/>
+<b>Note:</b> The parameter setting of an algorithm is required to be identical for each benchmark problem in this test suite, respectively. Participants are required to report the used parameter setting for each problem in the final submission to the competition. Please refer to “SUBMISSION GUIDELINE” for more details.<br/><br/>
 
 <u>(2) Intermediate results required to be recorded</u><br/>
 When an algorithm is executed to solve a specific benchmark problem in a run, the so far achieved best function error value (BFEV) w.r.t. each component task of this problem should be recorded when the current number of function evaluations reaches any of the predefined values which are set to k*maxFEs/Z, (k =1, …, Z; Z=100 for 2-task MTO problems and Z=1000 for 50-task MTO problems), in this competition. BFEV is calculated as the difference between the best objective function value achieved so far and the globally optimal objective function value known in advance. As a result, 100 BFEVs would be recorded for every 2-task benchmark problem, while 1000 BFEVs would be recorded for every 50-task benchmark problem, w.r.t. each component task in each run.
@@ -123,11 +123,11 @@ To derive the overall ranking for each algorithm participating in the competitio
 <b>For MTMOO test suite:</b><br/><br/>
 <u>(1) Experimental settings</u><br/>
 
-For each of 19 benchmark problems in this test suite, an algorithm is required to be executed for 30 runs where each run should employ different random seeds for the pseudo-random number generator(s) used in the algorithm. Note: It is prohibited to execute multiple 30 runs and deliberately pick up the best one.
+For each of 19 benchmark problems in this test suite, an algorithm is required to be executed for 30 runs where each run should employ different random seeds for the pseudo-random number generator(s) used in the algorithm. <b>Note:</b> It is prohibited to execute multiple 30 runs and deliberately pick up the best one.
 <br/>
 <br/>
 For all 2-task benchmark problems, the maximal number of function evaluations (maxFEs) used to terminate an algorithm in a run is set to 200,000, while the maxFEs is set to 5,000,000 for all 50-task benchmark problems. In the multitasking scenario, one function evaluation means calculation of the values of multiple objective functions of any component task without distinguishing different tasks.<br/>
-Note: The parameter setting of an algorithm is required to be identical for each benchmark problem in this test suite, respectively. Participants are required to report the used parameter setting for each problem in the final submission to the competition. Please refer to “SUBMISSION GUIDELINE” for more details.
+<b>Note</b>: The parameter setting of an algorithm is required to be identical for each benchmark problem in this test suite, respectively. Participants are required to report the used parameter setting for each problem in the final submission to the competition. Please refer to “SUBMISSION GUIDELINE” for more details.
 <br/>
 <br/>
 <u>(2) Intermediate results required to be recorded</u><br/>
