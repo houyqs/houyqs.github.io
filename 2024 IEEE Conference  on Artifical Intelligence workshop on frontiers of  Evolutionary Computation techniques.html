@@ -1,1 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Viewer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        .document {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .author, .message, .abstract, .bio {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="document">
+        <div class="title">From Trustworthy Systems to Trustworthy Artificial Intelligence</div>
+        <div class="message">
+              <p>Xin Yao (xinyao@ln.edu.hk)</p>
+              <p>School of Data Science</p>
+              <p>Lingnan University, Hong Kong SAR, China</p>
+        </div>
+        <div class="abstract">
+            <p><strong>Abstract:</strong> Trustworthiness is a critical issue in artificial intelligence (AI), especially for real-world AI applications. It is impossible to apply AI in the real-world without its being trustworthy. However, the connotation and extension of trustworthiness are not entirely clear to the scientific community. There has not been a single definition that is accepted by all researchers. Nevertheless, the vast majority of researchers agree that AI trustworthiness should include at least accuracy, reliability, robustness, safety, security, privacy, fairness, transparency, controllability, maintenability, etc. This talk first reviews briefly concepts like trust, trustworthiness and trustworthy systems in engineering. Then we discuss what might be new in trustworthy AI. It is argued that AI ethics is a crucial part of trustworthy AI, which was not highlighted in traditional trustworthy systems. We present a hirarchical and multi-dimensioanl view of AI ethics, including fairness, transparency, safety, etc. Finally, we focus on the latest technical solutions to some trustworthy issues in machine learning, including fairness, explanability and safety. It is shown how multi-objective evolutionary learning can be used as an effective approach to enhancing AI trustworthiness. </p>
+        </div>
+        <div class="bio">
+            <p><strong>Biosketch of the speaker:</strong> Xin Yao is Vice-President (Research and Innovation) and Tong Tin Sun Chair Professor of Machine Learning at the Lingnan University, Hong Kong SAR. He is an IEEE Fellow and was a Distinguished Lecturer of the IEEE Computational Intelligence Society (CIS). He served as the President (2014-15) of IEEE CIS and the Editor-in-Chief (2003-08) of IEEE Transactions on Evolutionary Computation. His major research interests include evolutionary computation, neural network ensemble learning, and real-world applications. Recently, he has been working on trustworthy AI, especially on fair machine learning and explainable AI, and AI ethics. His research work won the 2001 IEEE Donald G. Fink Prize Paper Award; 2010, 2016 and 2017 IEEE Transactions on Evolutionary Computation Outstanding Paper Awards; 2011 IEEE Transactions on Neural Networks Outstanding Paper Award; 2010 BT Gordon Radley Award for Best Author of Innovation (Finalist); and other best paper awards at conferences. He received the 2012 Royal Society Wolfson Research Merit Award, 2013 IEEE CIS Evolutionary Computation Pioneer Award and the 2020 IEEE Frank Rosenblatt Award.</p>
+        </div>
+    </div>
 
+    <div class="document">
+        <div class="title">Secure Federated Data-Driven Evolutionary Optimization</div>
+        <div class="abstract">
+            <p><strong>Abstract:</strong>Secure and federated data-driven optimization is an emerging research area that aims to protect the data security and privacy used in optimization. This talk starts with an introduction to basic ideas of data-driven optimization and federated privacy-preserving data-driven optimization. To protect the privacy of both offline and online data, we introduce a secure federated data-driven optimization framework based on the Diffie-Hellman protocol, in which a semi-honest client is randomly chosen to solve the acquisition function and determine the next sample point, making sure that newly sampled data is also protected. To reduce the negative impact of the noise added in differential privacy, a utility function is proposed to optimize the noise level that can optimally balance privacy preservation and optimization performance. Finally, a federated multi-tasking data-driven optimization algorithm is presented that shares the hyperparameters of Gaussian processes for knowledge transfer, while protecting the data privacy. </p>
+        </div>
+        <div class="bio">
+            <p><strong>Biosketch of the speaker:</strong> Yaochu Jin is Chair Professor for AI with the School of Engineering, Westlake University, Hangzhou, China. He was an Alexander von Humboldt Professor for Artificial Intelligence, with the Faculty of Technology, Bielefeld University, Germany. Prior to that, he was a Surrey Distinguished Chair, Professor in Computational Intelligence, Department of Computer Science, University of Surrey, Guildford, U.K. He was a “Finland Distinguished Professor” of University of Jyväskylä, Finland, “Changjiang Distinguished Visiting Professor”, Northeastern University, China, and “Distinguished Visiting Scholar”, University of Technology Sydney, Australia. His main research interests include evolutionary optimization and learning, trustworthy machine learning and optimization, and evolutionary developmental AI. He is a Member of Academia Europaea and Fellow of IEEE.</p>
+            <p>Prof Jin is presently the President of the IEEE Computational Intelligence Society and Editor-in-Chief of Complex & Intelligent Systems. He was the Editor-in-Chief of the IEEE Transactions on Cognitive and Developmental Systems. He is the recipient of the 2018, 2021 and 2024 IEEE Transactions on Evolutionary Computation Outstanding Paper Award, and the 2015, 2017, and 2020 IEEE Computational Intelligence Magazine Outstanding Paper Award.</p>
+        </div>
+    </div>
+
+    <div class="document">
+        <div class="title">Genetic Programming for Explainable Artificial Intelligence</div>
+        <div class="message">
+        <p>Mengjie Zhang</p>
+        <p>Victoria University of Wellington</p>
+        <p>New Zealand</p>
+        </div>
+        <div class="abstract">
+            <p><strong>Abstract:</strong> Explainable artificial intelligence (XAI) has recently attracted great attention due to its importance in critical application domains such as self-driving cars, law, and healthcare. Genetic programming (GP) is a powerful evolutionary algorithm for AI, machine learning and AutoML. Compared with other standard machine learning models such as neural networks, the models evolved by GP tend to be more interpretable due to the symbolic nature of the model structure. GP model interpretability has been playing an increasingly important role in XAI. This talk will first briefly overview explainable AI, then focus on how GP helps XAI in three aspects: intrinsic XGP, aiming to directly evolve more interpretable (and effective) models by GP; post-hoc XGP, which uses GP to explain other black-box machine learning models and the models evolved by GP by simpler models (e.g. linear models); and GP visualisation, which focuses on visual interpretability. Finally, I will discuss the challenges and future directions for XGP.    </p>
+        </div>
+        <div class="bio">
+            <p><strong>Biosketch of the speaker:</strong> Mengjie Zhang is a Fellow of Royal Society of New Zealand, a Fellow of Engineering New Zealand, a Fellow of IEEE, an IEEE Distinguished Lecturer, Professor of Computer Science (Artificial Intelligence) at Victoria University of Wellington, where he heads the interdisciplinary Evolutionary Computation and Machine Learning Research Group. He is also the founding Director of the Centre for Data Science and Artificial Intelligence at the University.</p>
+            <p>His research is mainly focused on AI, machine learning and big data, particularly in evolutionary learning and optimisation, feature selection/construction and big dimensionality reduction, computer vision and image analysis, scheduling and combinatorial optimisation, classification with unbalanced data and missing data, and evolutionary deep learning and transfer learning. Prof Zhang has published over 900 research papers in refereed international journals and conferences. He has been serving as an associated editor for over ten international journals including IEEE Transactions on Evolutionary Computation, IEEE Transactions on Cybernetics, the Evolutionary Computation Journal (MIT Press), and involving major AI and EC conferences as a chair. He received the “Evo* Award for Outstanding Contribution to Evolutionary Computation in Europe 2023”. Since 2007, he has been listed as a top five (currently No. 3) world genetic programming researchers by the GP bibliography (http://www.cs.bham.ac.uk/~wbl/biblio/gp-html/index.html).</p>
+            <p>Prof Zhang is currently the Chair for IEEE CIS Awards Committee. He is also a past Chair of the IEEE CIS Intelligent Systems Applications Technical Committee, the Emergent Technologies Technical Committee and the Evolutionary Computation Technical Committee, the Chair for IEEE CIS PubsCom Strategic Planning subcommittee, and the founding chair of the IEEE Computational Intelligence Chapter in New Zealand.</p>
+        </div>
+    </div>
+
+    <div class="document">
+        <div class="title">Evolutionary Computation and its Applications on Complex Networks</div>
+        <div class="abstract">
+            <p><strong>Abstract:</strong> Evolutionary computation is a kind of optimization method inspired by the nature selection mechanism, “survival of fittest”, and has been widely used in a variety of fields. This talk will give a brief introduction of evolutionary computation, and then focus on introducing how to use evolutionary computation the solve the problems on complex networks, especially on two problems, namely, community detection and network robustness optimization.</p>
+        </div>
+        <div class="bio">
+            <p><strong>Biosketch of the speaker:</strong> Jing Liu received the B.S. degree in computer science and technology and the Ph.D. degree in circuits and systems from Xidian University in 2000 and 2004, respectively. In 2005, she joined Xidian University as a lecture, and was promoted to a full professor in 2009. From Apr. 2007 to Apr. 2008, she worked at The University of Queensland, Australia as a postdoctoral research fellow, and from Jul. 2009 to Jul. 2011, she worked at The University of New South Wales at the Australian Defence Force Academy as a research associate. Now, she is the deputy dean and full professor in the Guangzhou Institute of Technology, Xidian University. Her research interests include evolutionary computation, complex networks, fuzzy cognitive maps, and computer vision. Prof. Liu has been the associate editor of IEEE Trans. Evolutionary Computation from 2015-2020, and the chair of Emerging Technologies Technical Committee (ETTC) of IEEE Computational Intelligence Society from 2017-2018.</p>
+        </div>
+    </div>
