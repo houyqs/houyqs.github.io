@@ -6,6 +6,29 @@
     a:visited {color:black;} /*用户已访问过的链接显示黑色*/
     a:hover {color:pink;}   /*鼠标放置在链接上时显示为粉色*/
     a:active {color:yellow;}  /* 链接被点击那一刻显示黄色 */
+
+  /* 使背景图片容器充满整个屏幕 */
+        .banner {
+            width: 100%;
+            height: 400px; /* 或根据需求调整高度 */
+            background-image: url('https://upyun.hw.85do.com/uploads/20240828/5a06a23e0d72abbc260b36760e80a5f9.jpeg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            display: flex;
+            justify-content: center;  /* 水平居中 */
+            align-items: center;      /* 垂直居中 */
+            color: white;
+            text-align: center; /* 让文字居中 */
+        }
+
+        .banner-msg h2, .banner-msg h3 {
+            margin: 0;
+        }
+
+        .banner-msg h3 {
+            margin-top: 5px;
+        }
 </style>
 </head>
 <body>
@@ -15,7 +38,14 @@
 <a href="https://www.hou-yq.com/" target="_self" name="Yaqing Hou's Homepage" title="Yaqing Hou's Homepage">Yaqing Hou's Homepage</a>
 
 <p align="center";><h1 style="color:#cc6600; padding:20px; font-size:32px "Microsoft yahei""; align="center";>CEC 2025 Competition on “Evolutionary Multi-task Optimization”</h1></p>
-<p align="center";><img src="image/session.jpg"></p>
+<!-- <p align="center";><img src="image/session.jpg"></p> -->
+  <!-- 保留一张图片 -->
+<div class="banner">
+    <div class="banner-msg">
+        <h2>IEEE Congress on Evolutionary Computation</h2>
+        <h3>June 8 - 12, 2025, Hangzhou, China</h3>
+    </div>
+</div>
 <p align="justify">
 <!-- Organized by <b>Yaqing Hou</b>, <b>Kai Qin</b>, <b>Liang Feng</b>, <b>Abhishek Gupta</b>, <b>Yew-Soon Ong</b><br/>
 <br/>
