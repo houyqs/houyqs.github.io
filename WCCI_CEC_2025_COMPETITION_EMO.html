@@ -119,7 +119,7 @@ Single-objective and multi-objective continuous optimization have been intensive
 The test suite for multi-task single-objective optimization (MTSOO) contains nine MTO complex problems, and ten 50-task MTO benchmark problems. Each of the complex MTO problem consists of two single-objective continuous optimization tasks, while each of the 50-task MTO problem contains 50 single-objective continuous optimization tasks, which bear certain commonality and complementarity in terms of the global optimum and the fitness landscape. These MTO problems possess different degrees of latent synergy between their involved component tasks.<br/><br/>
 The test suite for multi-task multi-objective optimization (MTMOO) includes nine MTO complex problems, and ten 50-task MTO benchmark problems. Each of the complex MTO problem consists of two multi-objective continuous optimization tasks, while each of the 50-task MTO problem contains 50 multi-objective continuous optimization tasks, which bear certain commonality and complementarity in terms of the Pareto optimal solutions and the fitness landscape. The MTO problems feature different degrees of latent synergy between their involved two component tasks.<br/><br/>
 
-All benchmark problems included in these two test suites are elaborated in technical reports [8],[9], respectively. Their associated code in Matlab is downloadable at 
+All benchmark problems included in these two test suites are elaborated in technical reports [8],[9], respectively. Their associated code is downloadable at 
 <a href="https://www.hou-yq.com/WCCI-Competition.rar" target="_self" name="WCCI-Competition" title="WCCI-Competition">here</a>.<br/><br/>
 
 <b>COMPETITION PROTOCOL</b>
@@ -129,15 +129,15 @@ For MTSOO test suite:
 <br/>
 <br/>
 <u>(1) Experimental settings</u><br/>
-For each of 19 benchmark problems in this test suite, an algorithm is required to be executed for 30 runs where each run should employ different random seeds for the pseudo-random number generator(s) used in the algorithm. <b>Note:</b> It is prohibited to execute multiple 30 runs and deliberately pick up the best one.<br/><br/>
+For each of 20 benchmark problems in this test suite, an algorithm is required to be executed for 30 runs where each run should employ different random seeds for the pseudo-random number generator(s) used in the algorithm. <b>Note:</b> It is prohibited to execute multiple 30 runs and deliberately pick up the best one.<br/><br/>
 For all 2-task benchmark problems, the maximal number of function evaluations (maxFEs) used to terminate an algorithm in a run is set to 200,000, while the maxFEs is set to 5,000,000 for all 50-task benchmark problems. In the multitasking scenario, one function evaluation means calculation of the objective function value of any component task without distinguishing different tasks.<br/><br/>
 <b>Note:</b> The parameter setting of an algorithm is required to be identical for each benchmark problem in this test suite, respectively. Participants are required to report the used parameter setting for each problem in the final submission to the competition. Please refer to “SUBMISSION GUIDELINE” for more details.<br/><br/>
 
 <u>(2) Intermediate results required to be recorded</u><br/>
-When an algorithm is executed to solve a specific benchmark problem in a run, the so far achieved best function error value (BFEV) w.r.t. each component task of this problem should be recorded when the current number of function evaluations reaches any of the predefined values which are set to k*maxFEs/Z, (k =1, …, Z; Z=100 for 2-task MTO problems and Z=1000 for 50-task MTO problems), in this competition. BFEV is calculated as the difference between the best objective function value achieved so far and the globally optimal objective function value known in advance. As a result, 100 BFEVs would be recorded for every 2-task benchmark problem, while 1000 BFEVs would be recorded for every 50-task benchmark problem, w.r.t. each component task in each run.
+When an algorithm is executed to solve a specific benchmark problem in a run, the so far achieved best function error value (BFEV) w.r.t. each component task of this problem should be recorded when the current number of function evaluations reaches any of the predefined values which are set to k*maxFEs/Z, (k =1, …, Z; Z=100 for 2-task MTO problems and Z=1000 for 50-task MTO problems), in this competition. Strictly speaking, BFEV should be calculated as the difference between the best objective function value achieved so far and the globally optimal objective function value known in advance. However, for the sake of simplicity, we use only the best objective function value achieved so far in this work. As a result, 100 BFEVs would be recorded for every 2-task benchmark problem, while 1000 BFEVs would be recorded for every 50-task benchmark problem, w.r.t. each component task in each run.
 <br/>
 <br/>
-Intermediate results for each benchmark problem are required to be saved separately into nine “.txt” files named as "MTOSOO_P1.txt", …, "MTOSOO_P9.txt" for the nine MTO complex problems, and "MTOMSO_P1.txt", …, "MTOMSO_P10.txt" for the ten 50-task MTO benchmark problems.
+Intermediate results for each benchmark problem are required to be saved separately into nine “.txt” files named as "MTOSOO_P1.txt", …, "MTOSOO_P10.txt" for the nine MTO complex problems, and "MTOMSO_P1.txt", …, "MTOMSO_P10.txt" for the ten 50-task MTO benchmark problems.
 <br/>
 <br/>
 1*maxFEs/Z, BFEV_{1,1}^1,…, BFEV_{1,1}^n,……, BFEV_{30,1}^1,…, BFEV_{30,1}^n<br/>
@@ -157,7 +157,7 @@ To derive the overall ranking for each algorithm participating in the competitio
 <b>For MTMOO test suite:</b><br/><br/>
 <u>(1) Experimental settings</u><br/>
 
-For each of 19 benchmark problems in this test suite, an algorithm is required to be executed for 30 runs where each run should employ different random seeds for the pseudo-random number generator(s) used in the algorithm. <b>Note:</b> It is prohibited to execute multiple 30 runs and deliberately pick up the best one.
+For each of 20 benchmark problems in this test suite, an algorithm is required to be executed for 30 runs where each run should employ different random seeds for the pseudo-random number generator(s) used in the algorithm. <b>Note:</b> It is prohibited to execute multiple 30 runs and deliberately pick up the best one.
 <br/>
 <br/>
 For all 2-task benchmark problems, the maximal number of function evaluations (maxFEs) used to terminate an algorithm in a run is set to 200,000, while the maxFEs is set to 5,000,000 for all 50-task benchmark problems. In the multitasking scenario, one function evaluation means calculation of the values of multiple objective functions of any component task without distinguishing different tasks.<br/>
@@ -168,7 +168,7 @@ For all 2-task benchmark problems, the maximal number of function evaluations (m
 When an algorithm is executed to solve a specific benchmark problem in a run, the obtained inverted generational distance (IGD) value w.r.t. each component task of this problem should be recorded when the current number of function evaluations reaches any of the predefined values which are set to k*maxFEs/Z, (k =1, …, Z; Z=100 for 2-task MTO problems and Z=1000 for 50-task MTO problems), in this competition. IGD [10] is a commonly used performance metric in multi-objective optimization to evaluate the quality (convergence and diversity) of the currently obtained Pareto front by comparing it to the optimal Pareto front known in advance. As a result, 100 IGD values would be recorded for every 2-task benchmark problem, while 1000 IGD values would be recorded for every 50-task benchmark problem, w.r.t. each component task in each run.
 <br/>
 <br/>
-Intermediate results for each benchmark problem are required to be saved into separate ".txt" files: "MTOMOO_P1.txt", …, "MTOMOO_P9.txt" for the nine MTO complex problems, and "MTOMMO_P1.txt", …, "MTOMMO_P10.txt" for the ten 50-task MTO benchmark problems. The data contained in each ".txt" file must conform to the following format:
+Intermediate results for each benchmark problem are required to be saved into separate ".txt" files: "MTOMOO_P1.txt", …, "MTOMOO_P10.txt" for the nine MTO complex problems, and "MTOMMO_P1.txt", …, "MTOMMO_P10.txt" for the ten 50-task MTO benchmark problems. The data contained in each ".txt" file must conform to the following format:
 <br/>
 <br/>
 1*maxFEs/Z, IGD_{1,1}^1,…, IGD_{1,1}^n,……, IGD_{30,1}^1,…, IGD_{30,1}^n<br/>
@@ -187,8 +187,8 @@ To derive the overall ranking for each algorithm participating in the competitio
 
 <b>SUBMISSION GUIDELINE</b><br/>
 please archive the following files into a single .zip file and then send it to <font color="red">CompetitionMTO@gmail.com</font> before the competition submission deadline (1 June 2025):<br/><br/>
-For participants in MTSOO: 19 ".txt" files (i.e., "MTOSOO_P1.txt", … , "MTOSOO_P10.txt"), "param_SO.txt" and "code.zip".<br/><br/>
-For participants in MTMOO: 19 “.txt” files (i.e., "MTOMOO_P1.txt", … , "MTOMOO_P9.txt"), "param_MO.txt" and "code.zip".<br/><br/>
+For participants in MTSOO: 20 ".txt" files (i.e., "MTOSOO_P1.txt", … , "MTOSOO_P10.txt"), "param_SO.txt" and "code.zip".<br/><br/>
+For participants in MTMOO: 20 “.txt” files (i.e., "MTOMOO_P1.txt", … , "MTOMOO_P10.txt"), "param_MO.txt" and "code.zip".<br/><br/>
 For participants in both MTSOO and MTMOO: 38 ".txt" files (i.e., the required ".txt" files for both MTSOO and MTMOO), "param_SO.txt", "param_MO.txt" and "code.zip".<br/><br/>
 Here, "param_SO.txt" and "param_MO.txt" contain the parameter setting of the algorithm for MTSOO and MTMOO test suites, respectively. "code.zip" contains the source code of the algorithm which should allow the generation of reproducible results.<br/><br/>
 If you would like to participate in the competition, please kindly inform us about your interest via email (CompetitionMTO@gmail.com) so that we can update you about any bug fixings and/or the extension of the deadline.
